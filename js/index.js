@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM \n Is \n Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -65,7 +65,7 @@ navItems.forEach(link => link.style.color = 'green');
 
 // Call To Action Content
 let ctaHeader = document.querySelector('h1');
-ctaHeader.textContent = siteContent['cta']['h1'];
+ctaHeader.innerText = siteContent['cta']['h1'];
 
 let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent['cta']['button'];
