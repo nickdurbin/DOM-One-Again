@@ -47,7 +47,7 @@ cta.src = "./img/header-img.png";
 let midImg = document.getElementById("middle-img");
 midImg.src = "./img/mid-page-accent.jpg";
 
-// Navigation 
+// // Navigation 
 let navItems = document.querySelectorAll('a');
 
 navItems[0].innerText = siteContent['nav']['nav-item-1'];
@@ -56,3 +56,14 @@ navItems[2].innerText = siteContent['nav']['nav-item-3'];
 navItems[3].innerText = siteContent['nav']['nav-item-4'];
 navItems[4].innerText = siteContent['nav']['nav-item-5'];
 navItems[5].innerText = siteContent['nav']['nav-item-6'];
+
+colorGreen("#008000");
+
+function colorGreen(navColor) {
+  let navItems = document.querySelectorAll('a');
+  for (let i = 0; i < navItems.length; i++) {
+    if (navItems[i]) {
+      navItems[i].style.color = navColor;
+    }
+  }
+}
