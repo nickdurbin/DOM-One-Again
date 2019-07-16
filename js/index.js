@@ -57,14 +57,7 @@ navItems[3].innerText = siteContent['nav']['nav-item-4'];
 navItems[4].innerText = siteContent['nav']['nav-item-5'];
 navItems[5].innerText = siteContent['nav']['nav-item-6'];
 
-colorGreen("#008000");
-
-function colorGreen(navColor) {
-  let navItems = document.querySelectorAll('a');
-  for (let i = 0; i < navItems.length; i++) {
-    navItems[i].style.color = navColor;
-  }
-}
+navItems.forEach(link => link.style.color = 'green');
 
 // let theNav = document.getElementsByTagName('nav');
 // theNav.appendChild(a);
