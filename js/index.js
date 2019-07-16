@@ -48,7 +48,7 @@ let midImg = document.getElementById("middle-img");
 midImg.src = "./img/mid-page-accent.jpg";
 
 // Navigation 
-let navItems = document.querySelectorAll('a').style.color = 'green';
+let navItems = document.querySelectorAll('a');
 
 navItems[0].innerText = siteContent['nav']['nav-item-1'];
 navItems[1].innerText = siteContent['nav']['nav-item-2']; 
