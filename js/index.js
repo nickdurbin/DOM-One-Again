@@ -59,9 +59,12 @@ navItems[5].innerText = siteContent['nav']['nav-item-6'];
 
 navItems.forEach(link => link.style.color = 'green');
 
-// let theNav = document.getElementsByTagName('nav');
-// theNav.appendChild(a);
-// theNav.prepend(a);
+let theNav = document.createElement("A");
+theNav.setAttribute('href', '#');
+let textNav = document.createTextNode('Blog');
+theNav.appendChild(textNav);
+// theNav.prepend(textNav);
+// document.getElementByTagName('nav').appendChild(textNav);
 
 // Call To Action Content
 let ctaHeader = document.querySelector('h1');
