@@ -48,6 +48,14 @@ let midImg = document.getElementById("middle-img");
 midImg.src = "./img/mid-page-accent.jpg";
 
 // Navigation 
+
+let theNav = document.getElementsByTagName('nav');
+let navLink = document.createElement('a');
+navLink.innerText = 'Blog';
+navLink.href = '#';
+
+theNav[0].appendChild(navLink);
+
 let navItems = document.querySelectorAll('a');
 
 navItems[0].innerText = siteContent['nav']['nav-item-1'];
@@ -56,6 +64,14 @@ navItems[2].innerText = siteContent['nav']['nav-item-3'];
 navItems[3].innerText = siteContent['nav']['nav-item-4'];
 navItems[4].innerText = siteContent['nav']['nav-item-5'];
 navItems[5].innerText = siteContent['nav']['nav-item-6'];
+
+let first = document.createElement('a');
+first.innerText = 'First';
+first.style.color = 'green';
+first.href = '#';
+theNav[0].prepend(first);
+
+console.log(navItems);
 
 navItems.forEach(link => link.style.color = 'green');
 
