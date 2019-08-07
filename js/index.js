@@ -81,7 +81,9 @@ let br2 = document.createElement('br');
 
 // Call To Action Content
 let ctaHeader = document.querySelector('h1');
-ctaHeader.innerText = siteContent['cta']['h1'];
+// ctaHeader.innerText = siteContent['cta']['h1'];
+
+ctaHeader.innerHTML = "DOM <br> IS <br> AWESOME";
 
 let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent['cta']['button'];
