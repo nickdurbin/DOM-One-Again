@@ -75,6 +75,10 @@ console.log(navItems);
 
 navItems.forEach(link => link.style.color = 'green');
 
+// Creating Break Lines
+let br1 = document.createElement('br');
+let br2 = document.createElement('br');
+
 // Call To Action Content
 let ctaHeader = document.querySelector('h1');
 ctaHeader.innerText = siteContent['cta']['h1'];
