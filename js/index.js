@@ -49,41 +49,37 @@ midImg.src = "./img/mid-page-accent.jpg";
 
 // Navigation 
 
-let theNav = document.getElementsByTagName('nav');
-let navLink = document.createElement('a');
-navLink.innerText = 'Blog';
-navLink.href = '#';
-
-theNav[0].appendChild(navLink);
-
 let navItems = document.querySelectorAll('a');
 
-navItems[0].innerText = siteContent['nav']['nav-item-1'];
-navItems[1].innerText = siteContent['nav']['nav-item-2']; 
-navItems[2].innerText = siteContent['nav']['nav-item-3'];
-navItems[3].innerText = siteContent['nav']['nav-item-4'];
-navItems[4].innerText = siteContent['nav']['nav-item-5'];
-navItems[5].innerText = siteContent['nav']['nav-item-6'];
+for (let i =0; i < navItems.length; i++) {
+  navItems[i].innerText = siteContent['nav'][`nav-item-${i+1}`]
+}
+
+let theNav = document.getElementsByTagName('nav');
 
 let first = document.createElement('a');
 first.innerText = 'First';
-first.style.color = 'green';
 first.href = '#';
 theNav[0].prepend(first);
 
-console.log(navItems);
+let navLink = document.createElement('a');
+navLink.innerText = 'Blog';
+navLink.href = '#';
+theNav[0].appendChild(navLink);
 
-navItems.forEach(link => link.style.color = 'green');
+let newNav = document.querySelectorAll('a');
+
+newNav.forEach(link => link.style.color = 'green');
 
 // Creating Break Lines
 let br1 = document.createElement('br');
 let br2 = document.createElement('br');
 
 // Call To Action Content
-let ctaHeader = document.querySelector('h1');
+let ctaHeader = document.querySelector('.cta-text h1');
+ctaHeader.innerHTML = siteContent['cta']['h1'].replace('IS', '<br/>IS<br>');
 // ctaHeader.innerText = siteContent['cta']['h1'];
-
-ctaHeader.innerHTML = "DOM <br> IS <br> AWESOME";
+// ctaHeader.innerHTML = "DOM <br> IS <br> AWESOME";
 
 let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent['cta']['button'];

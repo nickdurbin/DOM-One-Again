@@ -8,7 +8,7 @@ const seconds = document.getElementById('secondOnes');
 const tenSeconds = document.getElementById('secondTens');
 
 
-// Need to run a loop through the tens of millseconds (0-9) to get to hundreds of milliseconds
+// Need to run a loop through the tens of milliseconds (0-9) to get to hundreds of milliseconds
 // Run the same loop through hundreds (0-9) to get to seconds
 // Same loop to get to tens of seconds, but stop on 10 and turn red.
 // Start button should begin counting and iterating through the functions
@@ -17,6 +17,7 @@ const tenSeconds = document.getElementById('secondTens');
 // setInterval() and Date.now() should be used.
 // 1000ms ='s 1 second.
 
+<<<<<<< HEAD
 
 
 startBtn.addEventListener('onclick', function (){
@@ -29,6 +30,9 @@ startBtn.addEventListener('onclick', function (){
 }, false);
 
 // startBtn.onclick = startTimer;
+=======
+startBtn.addEventListener('onclick').textContent = 'Stop';
+>>>>>>> f72bc6e03bc67a5241935dbfa56ca2b61d20cfcf
 
 resetBtn.onclick = function () {
   digits.textContent = "--:--";
