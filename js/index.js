@@ -76,10 +76,10 @@ let br1 = document.createElement('br');
 let br2 = document.createElement('br');
 
 // Call To Action Content
-let ctaHeader = document.querySelector('h1');
-// ctaHeading.innerHTML = siteContent['cta']['h1'].replace('IS', '<br/>IS<br>');
+let ctaHeader = document.querySelector('.cta-text h1');
+ctaHeader.innerHTML = siteContent['cta']['h1'].replace('IS', '<br/>IS<br>');
 // ctaHeader.innerText = siteContent['cta']['h1'];
-ctaHeader.innerHTML = "DOM <br> IS <br> AWESOME";
+// ctaHeader.innerHTML = "DOM <br> IS <br> AWESOME";
 
 let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent['cta']['button'];
