@@ -2,7 +2,10 @@ const startBtn = document.querySelector('.start-btn');
 const resetBtn = document.querySelector('.reset-btn');
 const digits = document.querySelector('.digits');
 const digit = document.querySelectorAll('.digit');
-const tenMs = document.querySelector('#')
+const tenMs = document.getElementById('msTens');
+const hundredMs = document.getElementById('msHundreds');
+const seconds = document.getElementById('secondOnes');
+const tenSeconds = document.getElementById('secondTens');
 
 
 // Need to run a loop through the tens of millseconds (0-9) to get to hundreds of milliseconds
@@ -15,15 +18,17 @@ const tenMs = document.querySelector('#')
 // 1000ms ='s 1 second.
 
 
-function addTime() {
-  for (let tms = 0; tms >= 100; tms++) {
-    for (let seconds = 0; seconds >= 10; seconds++) {
-    }
-  }
-}
 
-startBtn.setAttribute('click').textConent = 'Stop';
-startBtn.onclick = startTimer;
+startBtn.addEventListener('onclick', function (){
+  if (startBtn.getAttribute("button") == startBtn.innerHTML) {
+    startBtn.innerHTML = StartBtn.getAttribute("button");
+  } else {
+    startBtn.setAttribute("button", startBtn.innerHTML);
+    startBtn.innerHTML = startBtn.getAttribute("button");
+  }
+}, false);
+
+// startBtn.onclick = startTimer;
 
 resetBtn.onclick = function () {
   digits.textContent = "--:--";
