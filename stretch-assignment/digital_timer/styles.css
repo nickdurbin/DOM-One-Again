@@ -9,9 +9,13 @@ body {
   align-items: center;
 }
 
+.digits {
+  font-size: 8rem;
+}
+
 .digit {
   display: inline-block;
-  font-size: 80px;
+  font-size: 8rem;
 }
 
 .redDigit {

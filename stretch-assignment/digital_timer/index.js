@@ -16,6 +16,7 @@ const tenSeconds = document.getElementById('secondTens');
 // Reset button sets timer back to starting position
 // setInterval() and Date.now() should be used.
 // 1000ms ='s 1 second.
+// Change all digit element classes to 0
 
 
 
@@ -31,6 +32,6 @@ startBtn.addEventListener('onclick', function (){
 // startBtn.onclick = startTimer;
 
 resetBtn.onclick = function () {
-  digits.textContent = "--:--";
+  digits.textContent = "00:00";
   seconds = 0; ms = 0;
 }
