@@ -5,7 +5,7 @@ const digit = document.querySelectorAll('.digit');
 const tenMs = document.querySelector('#')
 
 
-// Need to run a loop through the tens of millseconds (0-9) to get to hundreds of milliseconds
+// Need to run a loop through the tens of milliseconds (0-9) to get to hundreds of milliseconds
 // Run the same loop through hundreds (0-9) to get to seconds
 // Same loop to get to tens of seconds, but stop on 10 and turn red.
 // Start button should begin counting and iterating through the functions
@@ -14,16 +14,7 @@ const tenMs = document.querySelector('#')
 // setInterval() and Date.now() should be used.
 // 1000ms ='s 1 second.
 
-
-function addTime() {
-  for (let tms = 0; tms >= 100; tms++) {
-    for (let seconds = 0; seconds >= 10; seconds++) {
-    }
-  }
-}
-
-startBtn.setAttribute('click').textConent = 'Stop';
-startBtn.onclick = startTimer;
+startBtn.addEventListener('onclick').textContent = 'Stop';
 
 resetBtn.onclick = function () {
   digits.textContent = "--:--";
