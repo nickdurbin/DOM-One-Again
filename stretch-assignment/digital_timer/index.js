@@ -17,7 +17,6 @@ const tenSeconds = document.getElementById('secondTens');
 // setInterval() and Date.now() should be used.
 // 1000ms ='s 1 second.
 
-<<<<<<< HEAD
 
 
 startBtn.addEventListener('onclick', function (){
@@ -30,9 +29,6 @@ startBtn.addEventListener('onclick', function (){
 }, false);
 
 // startBtn.onclick = startTimer;
-=======
-startBtn.addEventListener('onclick').textContent = 'Stop';
->>>>>>> f72bc6e03bc67a5241935dbfa56ca2b61d20cfcf
 
 resetBtn.onclick = function () {
   digits.textContent = "--:--";
