@@ -67,7 +67,6 @@ startBtn.onclick = function startTimer () {
   }
 }
 
-
 // startBtn.addEventListener('onclick', function (){
 //   if (startBtn.getAttribute("button") == startBtn.innerHTML) {
 //     startBtn.innerHTML = StartBtn.getAttribute("button");
